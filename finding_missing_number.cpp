@@ -6,26 +6,17 @@ using namespace std;
 int main() {
     //Your Code goes here!
     vector <int> a={1,9,2,8,3,5,6,4};
-    int max=a[0],min=a[0],n=a.size();
-    for(int i=1;i<n;i++)
-    {
-        if(max<=a[i])
-        {
-            max=a[i];
-        }
-        else if(min>a[i])
-        {
-            min=a[i];
-        }
-    }
+    int min=1,n=a.size();
+    int max=n+1,sum=0;
+    
     cout<<min<<":"<<max<<endl;
-    for(int i=min;i<max+1;i++)
+    for(int i:a)
     {
-        if(find(a.begin(),a.end(),i)==a.end())
-        {
-            cout<<i<<" ";
-        }
+    sum+=i;
     }
-    cout<<endl;
+    int m=(max*(max+1))/2;
+    cout<<n<<":"<<sum<<endl;
+    int ans=m-sum;
+    cout<<ans<<endl;
     return 0;
 }
