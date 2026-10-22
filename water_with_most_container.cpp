@@ -23,7 +23,7 @@ int main() {
         {
             i++;
         }
-        cout<<"current container :"<<maxValue<<endl;
+        //cout<<"current container :"<<maxValue<<endl;
     }
     cout<<"maximum container :"<<maxValue;
 
