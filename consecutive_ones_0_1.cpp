@@ -22,8 +22,8 @@ int main()
         {
             temp=count;
         }
-        }
-
+    }
+    
         
     }
     cout<<"MAXIMUM NUMBER OF ONE's :"<<temp;
